@@ -5,11 +5,11 @@ declare(strict_types=1);
 namespace Trantor\Config\Doctrine;
 
 
+use App\Infrastructure\Identity\Uuid;
 use Doctrine\DBAL\Platforms\AbstractPlatform;
 use Doctrine\DBAL\Types\ConversionException;
 use Doctrine\DBAL\Types\Type;
 use InvalidArgumentException;
-use Trantor\Util\Identity\Uuid;
 
 class UuidType extends Type
 {
